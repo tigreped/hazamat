@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="EN" lang="EN" dir="ltr" xmlns:fb="http://ogp.me/ns/fb#">
+<head profile="http://gmpg.org/xfn/11">
+<title>Hazamat - Site Oficial</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="imagetoolbar" content="no" />
+<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<script type="text/javascript" src="scripts/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.defaultvalue.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.13.custom.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.scrollTo-min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $("#entry_1388242970, #entry_455855693, #entry_1508029279, #entry_1407947355").defaultvalue("Nome completo", "Endereço de e-mail", "(XX) 1234-5678", "Mensagem");
+    $('#shout a').click(function () {
+        var to = $(this).attr('href');
+        $.scrollTo(to, 1200);
+        return false;
+    });
+    $('a.topOfPage').click(function () {
+        $.scrollTo(0, 1200);
+        return false;
+    });
+    $("#tabcontainer").tabs({
+        event: "click"
+    });
+});
+</script>
+<!-- Homepage Only Scripts -->
+<script type="text/javascript" src="scripts/jquery.cycle.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.cycle.setup.js"></script>
+<script type="text/javascript" src="scripts/piecemaker/swfobject/swfobject.js"></script>
+<script type="text/javascript">
+var flashvars = {};
+flashvars.cssSource = "scripts/piecemaker/piecemaker.css";
+flashvars.xmlSource = "scripts/piecemaker/piecemaker.xml";
+var params = {};
+params.play = "false";
+params.menu = "false";
+params.scale = "showall";
+params.wmode = "transparent";
+params.allowfullscreen = "true";
+params.allowscriptaccess = "sameDomain";
+params.allownetworking = "all";
+swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
+</script>
+<!-- Google Docs Script to grab form data -->
+<script type="text/javascript">
+        /**
+ * @license
+ *! H5F
+ * https://github.com/ryanseddon/H5F/
+ * Copyright (c) Ryan Seddon | Licensed MIT
+ */
+
+(function(e,t){"function"==typeof define&&define.amd?define(t):e.H5F=t()})(this,function(){var e,t,a,i,n,r,s,l,u,o,c,d,v,f,p,m,h,g,b,y,w,C,N,A,E,$,k=document,x=k.createElement("input"),q=/^[a-zA-Z0-9.!#$%&'*+-\/=?\^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,M=/[a-z][\-\.+a-z]*:\/\//i,L=/^(input|select|textarea)$/i;return r=function(e,t){var a=!e.nodeType||!1,i={validClass:"valid",invalidClass:"error",requiredClass:"required",placeholderClass:"placeholder"};if("object"==typeof t)for(var r in i)t[r]===void 0&&(t[r]=i[r]);if(n=t||i,a)for(var l=0,u=e.length;u>l;l++)s(e[l]);else s(e)},s=function(a){var i,n=a.elements,r=n.length,s=!!a.attributes.novalidate;if(b(a,"invalid",u,!0),b(a,"blur",u,!0),b(a,"input",u,!0),b(a,"keyup",u,!0),b(a,"focus",u,!0),b(a,"change",u,!0),b(a,"click",o,!0),b(a,"submit",function(i){e=!0,t||s||a.checkValidity()||w(i)},!1),!v())for(a.checkValidity=function(){return c(a)};r--;)i=!!n[r].attributes.required,"fieldset"!==n[r].nodeName.toLowerCase()&&l(n[r])},l=function(e){var t=e,a=g(t),n={type:t.getAttribute("type"),pattern:t.getAttribute("pattern"),placeholder:t.getAttribute("placeholder")},r=/^(email|url)$/i,s=/^(input|keyup)$/i,l=r.test(n.type)?n.type:n.pattern?n.pattern:!1,u=f(t,l),o=m(t,"step"),v=m(t,"min"),h=m(t,"max"),b=!(""===t.validationMessage||void 0===t.validationMessage);t.checkValidity=function(){return c.call(this,t)},t.setCustomValidity=function(e){d.call(t,e)},t.validity={valueMissing:a,patternMismatch:u,rangeUnderflow:v,rangeOverflow:h,stepMismatch:o,customError:b,valid:!(a||u||o||v||h||b)},n.placeholder&&!s.test(i)&&p(t)},u=function(e){var t=C(e)||e,a=/^(input|keyup|focusin|focus|change)$/i,r=/^(submit|image|button|reset)$/i,s=/^(checkbox|radio)$/i,o=!0;!L.test(t.nodeName)||r.test(t.type)||r.test(t.nodeName)||(i=e.type,v()||l(t),t.validity.valid&&(""!==t.value||s.test(t.type))||t.value!==t.getAttribute("placeholder")&&t.validity.valid?(A(t,[n.invalidClass,n.requiredClass]),N(t,n.validClass)):a.test(i)?t.validity.valueMissing&&A(t,[n.requiredClass,n.invalidClass,n.validClass]):t.validity.valueMissing?(A(t,[n.invalidClass,n.validClass]),N(t,n.requiredClass)):t.validity.valid||(A(t,[n.validClass,n.requiredClass]),N(t,n.invalidClass)),"input"===i&&o&&(y(t.form,"keyup",u,!0),o=!1))},c=function(t){var a,i,n,r,s=!1;if("form"===t.nodeName.toLowerCase()){a=t.elements;for(var l=0,o=a.length;o>l;l++)i=a[l],n=!!i.attributes.required,r=!!i.attributes.pattern,"fieldset"!==i.nodeName.toLowerCase()&&(n||r&&n)&&(u(i),i.validity.valid||s||(e&&i.focus(),s=!0));return!s}return u(t),t.validity.valid},d=function(e){var t=this;t.validationMessage=e},o=function(e){var a=C(e);a.attributes.formnovalidate&&"submit"===a.type&&(t=!0)},v=function(){return E(x,"validity")&&E(x,"checkValidity")},f=function(e,t){if("email"===t)return!q.test(e.value);if("url"===t)return!M.test(e.value);if(t){var i=e.getAttribute("placeholder"),n=e.value;return a=RegExp("^(?:"+t+")$"),n===i?!1:""===n?!1:!a.test(e.value)}return!1},p=function(e){var t={placeholder:e.getAttribute("placeholder")},a=/^(focus|focusin|submit)$/i,r=/^(input|textarea)$/i,s=/^password$/i,l=!!("placeholder"in x);l||!r.test(e.nodeName)||s.test(e.type)||(""!==e.value||a.test(i)?e.value===t.placeholder&&a.test(i)&&(e.value="",A(e,n.placeholderClass)):(e.value=t.placeholder,b(e.form,"submit",function(){i="submit",p(e)},!0),N(e,n.placeholderClass)))},m=function(e,t){var a=parseInt(e.getAttribute("min"),10)||0,i=parseInt(e.getAttribute("max"),10)||!1,n=parseInt(e.getAttribute("step"),10)||1,r=parseInt(e.value,10),s=(r-a)%n;return g(e)||isNaN(r)?"number"===e.getAttribute("type")?!0:!1:"step"===t?e.getAttribute("step")?0!==s:!1:"min"===t?e.getAttribute("min")?a>r:!1:"max"===t?e.getAttribute("max")?r>i:!1:void 0},h=function(e){var t=!!e.attributes.required;return t?g(e):!1},g=function(e){var t=e.getAttribute("placeholder"),a=/^(checkbox|radio)$/i,i=!!e.attributes.required;return!(!i||""!==e.value&&e.value!==t&&(!a.test(e.type)||$(e)))},b=function(e,t,a,i){E(window,"addEventListener")?e.addEventListener(t,a,i):E(window,"attachEvent")&&window.event!==void 0&&("blur"===t?t="focusout":"focus"===t&&(t="focusin"),e.attachEvent("on"+t,a))},y=function(e,t,a,i){E(window,"removeEventListener")?e.removeEventListener(t,a,i):E(window,"detachEvent")&&window.event!==void 0&&e.detachEvent("on"+t,a)},w=function(e){e=e||window.event,e.stopPropagation&&e.preventDefault?(e.stopPropagation(),e.preventDefault()):(e.cancelBubble=!0,e.returnValue=!1)},C=function(e){return e=e||window.event,e.target||e.srcElement},N=function(e,t){var a;e.className?(a=RegExp("(^|\\s)"+t+"(\\s|$)"),a.test(e.className)||(e.className+=" "+t)):e.className=t},A=function(e,t){var a,i,n="object"==typeof t?t.length:1,r=n;if(e.className)if(e.className===t)e.className="";else for(;n--;)a=RegExp("(^|\\s)"+(r>1?t[n]:t)+"(\\s|$)"),i=e.className.match(a),i&&3===i.length&&(e.className=e.className.replace(a,i[1]&&i[2]?" ":""))},E=function(e,t){var a=typeof e[t],i=RegExp("^function|object$","i");return!!(i.test(a)&&e[t]||"unknown"===a)},$=function(e){for(var t=document.getElementsByName(e.name),a=0;t.length>a;a++)if(t[a].checked)return!0;return!1},{setup:r}});
+  </script>
+  <!-- End Homepage Only Scripts -->
+
+  <!-- Scripts for the audio player-->
+  <link rel="stylesheet" type="text/css" href="music-player/plugin/css/style.css">
+  <script type="text/javascript" src="music-player/plugin/jquery-jplayer/jquery.jplayer.js"></script>
+  <script type="text/javascript" src="music-player/plugin/ttw-music-player-min.js"></script>
+  <script type="text/javascript" src="scripts/myplaylist.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function(){
+          var description = '';
+          $('body').ttwMusicPlayer(myPlaylist, {
+              autoPlay:true, 
+              description:description,
+              jPlayer:{
+                  swfPath:'music-player/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+              }
+          });
+      });
+  </script>
+</head>
+
+<body id="top">
+  <div class="wrapper col1">
+    <div id="topbar" class="clear">
+      <div id="topnav">
+        <ul>
+          <li class="last"><a href="http://www.flickr.com/search/?q=hazamat" target="_blank">Fotos</a><span>Galeria de fotos</span></li>
+          <li><a href="http://hazamat.blog.com/release/" target="_blank">Release</a><span>Conheça a banda</span></li>
+          <li><a href="#">Discografia</a><span>Músicas</span>
+            <ul>
+              <li><a href="http://archive.org/download/Hazamat-Hazamat/Hazamat-Hazamat2011.zip">"Hazamat [2011]"</a></li>
+              <li><a href="http://archive.org/download/HazamatNossaVoz/Hazamat%20-%20Nossa%20Voz.mp3">"Nossa Voz" (Single) [2013]"</a></li>
+              <li><a href="http://archive.org/download/Hazamat-LiveAtTapero-pb/Hazamat-LiveAtTapero-pb_vbr_mp3.zip">Live at Taperoá-PB [2013]</a></li>
+              <li><a href="#">Live at João Pessoa-PB [2013]</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Letras e Cifras</a><span>Letras e Cifras</span></li>
+          <li class="active"><a href="http://www.hazamat.com">Principal</a><span>Acesse a página inicial</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col2">
+    <div id="header" class="clear">
+      <img src="images/hazamat-logo-2.jpg"/>
+      <!-- menu code was here -->
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col3">
+    <div id="featured_slide">
+      <!-- ####################################################################################################### -->
+      <div id="piecemaker"> </div>
+      <!-- ####################################################################################################### -->
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col4">
+    <div id="container" class="clear">
+      <!-- ####################################################################################################### -->
+      <div class="clear">
+        <div class="fl_left" style="text-align:center;">
+            <h2>↓ Novo single: "Nossa voz" ↓</h2>
+            <a href="http://archive.org/download/HazamatNossaVoz/Hazamat%20-%20Nossa%20Voz.mp3"><img src="images/brasao.png"></a>
+        </div>
+        <div class="fl_right" style="text-align:center;">
+          <h2>↓ Hazamat - Live at Taperoá-PB ↓</h2>
+          <a href="http://archive.org/download/Hazamat-LiveAtTapero-pb/Hazamat-LiveAtTapero-pb_vbr_mp3.zip"><img src="images/capa_live_taperoa.jpg"></a>
+        </div>
+      </div>
+      <br />    <br />
+      <!-- ####################################################################################################### -->
+      <div id="homepage" class="clear">
+        <div class="fl_left">
+          <h2>Vídeos recentes</h2>
+            <iframe width="640" height="400" src="http://www.youtube.com/embed/7TZBU_EtYLE?list=UUvteah77mN3Xl1-mrvW9Ryw" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="fl_right">
+          <h2>@Twitter</h2>
+        <a class="twitter-timeline" href="https://twitter.com/bandaHazamat" data-widget-id="357327868856000512" background-color="#000000" height="400" width="300">
+          @bandaHazamat
+        </a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+        </script>
+        </div>
+      </div>
+      <!-- ####################################################################################################### -->
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="footer" class="clear">
+      <div class="fl_left">
+        <div id="contact" class="clear">
+          <h2>Entre em contato!</h2>
+          <div class="fl_left">
+            <form action="https://docs.google.com/forms/d/1ojJ1_rvNjADIw4NcQAsGD5HeWShiqQuM2xxqnUWFKbU/formResponse" method="POST" id="ss-form" target="_blank">
+              <p>*Nome:</p>
+              <input type="text" name="entry.1388242970" value="" id="entry_1388242970" dir="auto" aria-required="true" required="" title="">
+              <p>*E-mail:</p>
+              <input type="text" name="entry.455855693" value="" id="entry_455855693" dir="auto" aria-required="true" required="" title="">
+              <p>Telefone:</p>
+              <input type="text" name="entry.1508029279" value="" id="entry_1508029279" dir="auto" title="">
+              <p>*Mensagem:</p>
+              <textarea name="entry.1407947355" rows="8" cols="20" id="entry_1407947355" dir="auto" aria-required="true" required=""></textarea>
+              <p>(*) Campos obrigatórios</p><br>
+              <button type="submit" value="submit" onClick="greeting()"><span>Enviar</span></button>
+            </form>
+          </div>
+          <div class="fl_right">
+            <ul>
+              <li><strong class="title">Telefones:</strong><br />
+                +55 83 9824 8012<br />
+                +55 83 8896 7660<br />
+                +55 83 8756 6076<br />
+                +55 83 8857 5783
+                </li>
+              <li><strong class="title">Email:</strong><br />
+                <a href="#">bandaHazamat@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- ####################################################################################################### -->
+      <div class="fl_right">
+        <div id="tabcontainer" class="border">
+          <h2>Player</h2>
+          <br/>
+          <br/>
+          <!-- Links para as redes sociais -->
+        </div>
+        <div id="tabcontainer" class="border">
+          <h2>Redes sociais</h2>
+          <a href="http://twitter.com/bandaHazamat"><img src="images/icon-twitter-sm.png"></a>
+          <a href="http://facebook.com/bandaHazamat"><img src="images/icon-facebook-sm.png"></a>
+          <a href="http://hazamat.blog.com"><img src="images/icon-blog-sm.png"></a>
+          <a href="http://youtube.com/bandaHazamat"><img src="images/icon-youtube-sm.png"></a>
+        </div>
+        <div class="about_us border">
+          <h2>Sobre</h2>
+          <p>A Hazamat é uma banda de rock'n roll de João Pessoa, no estado da Paraíba. Em atividade desde 2010, possui diversas influências musicais, o que se reflete na sonoridade multifacetada que apresenta em suas composições. Suas músicas tem como característica um instrumental técnico, vocais melódicos e letras cantadas em português.</p>
+        </div>
+      </div>
+    </div>
+    <div id="backtotop"><a href="#top" class="topOfPage">Início</a></div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="copyright" class="clear">
+      <p class="fl_left">Sob a Licença Creative Commons - 2013 - Liberdade total para os usuários - <a href="http://www.hazamat.com">www.hazamat.com</a></p>
+      <p class="fl_right">Template por <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a>, alterado por <a href="mailto:tigreped@gmail.com">Pedro Guimarães</a></p>
+    </div>
+  </div>
+  <!--Scripts for the Google form operation-->
+  <script type='text/javascript' src='/static/forms/client/js/1148376735-formviewer_prd__pt_br.js'></script>
+  <script type="text/javascript">H5F.setup(document.getElementById('ss-form'));_initFormViewer(
+            "[100,\x22#ccc\x22,[]\n]\n");
+  </script>
+
+</body>
+
+</html>
