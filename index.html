@@ -44,6 +44,19 @@ params.allowscriptaccess = "sameDomain";
 params.allownetworking = "all";
 swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '430', '10', null, flashvars, params, null);
 </script>
+<!-- Music-Player-->
+<script type="text/javascript">
+  $(document).ready(function(){
+    var description = '';
+    $('body').ttwMusicPlayer(myPlaylist, {
+      autoPlay:true, 
+      description:description,
+      jPlayer:{
+        swfPath:'music-player/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
+      }
+    });
+  });
+</script>
 <!-- Google Docs Script to grab form data -->
 <script type="text/javascript">
         /**
@@ -62,18 +75,6 @@ swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '43
   <script type="text/javascript" src="music-player/plugin/jquery-jplayer/jquery.jplayer.js"></script>
   <script type="text/javascript" src="music-player/plugin/ttw-music-player-min.js"></script>
   <script type="text/javascript" src="scripts/myplaylist.js"></script>
-  <script type="text/javascript">
-      $(document).ready(function(){
-          var description = '';
-          $('body').ttwMusicPlayer(myPlaylist, {
-              autoPlay:true, 
-              description:description,
-              jPlayer:{
-                  swfPath:'music-player/plugin/jquery-jplayer' //You need to override the default swf path any time the directory structure changes
-              }
-          });
-      });
-  </script>
 </head>
 
 <body id="top">
@@ -82,16 +83,8 @@ swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '43
       <div id="topnav">
         <ul>
           <li class="last"><a href="http://www.flickr.com/search/?q=hazamat" target="_blank">Fotos</a><span>Galeria de fotos</span></li>
+          <li><a href="http://www.youtube.com/user/bandaHazamat/videos">Vídeos</a><span>Canal oficial no Youtube</li>
           <li><a href="http://hazamat.blog.com/release/" target="_blank">Release</a><span>Conheça a banda</span></li>
-          <li><a href="#">Discografia</a><span>Músicas</span>
-            <ul>
-              <li><a href="http://archive.org/download/Hazamat-Hazamat/Hazamat-Hazamat2011.zip">"Hazamat [2011]"</a></li>
-              <li><a href="http://archive.org/download/HazamatNossaVoz/Hazamat%20-%20Nossa%20Voz.mp3">"Nossa Voz" (Single) [2013]"</a></li>
-              <li><a href="http://archive.org/download/Hazamat-LiveAtTapero-pb/Hazamat-LiveAtTapero-pb_vbr_mp3.zip">Live at Taperoá-PB [2013]</a></li>
-              <li><a href="#">Live at João Pessoa-PB [2013]</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Letras e Cifras</a><span>Letras e Cifras</span></li>
           <li class="active"><a href="http://www.hazamat.com">Principal</a><span>Acesse a página inicial</span></li>
         </ul>
       </div>
@@ -114,18 +107,34 @@ swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '43
   </div>
   <!-- ####################################################################################################### -->
   <div class="wrapper col4">
+    </br></br></br></br>
     <div id="container" class="clear">
       <!-- ####################################################################################################### -->
       <div class="clear">
-        <div class="fl_left" style="text-align:center;">
-            <h2>↓ Novo single: "Nossa voz" ↓</h2>
-            <a href="http://archive.org/download/HazamatNossaVoz/Hazamat%20-%20Nossa%20Voz.mp3"><img src="images/brasao.png"></a>
-        </div>
-        <div class="fl_right" style="text-align:center;">
-          <h2>↓ Hazamat - Live at Taperoá-PB ↓</h2>
-          <a href="http://archive.org/download/Hazamat-LiveAtTapero-pb/Hazamat-LiveAtTapero-pb_vbr_mp3.zip"><img src="images/capa_live_taperoa.jpg"></a>
-        </div>
+        <table style="text-align:center;border:none;">
+          <tr>
+            <td>
+              <h2>↓ Hazamat - Live at Espaço Mundo-PB ↓</h2>
+              <a href="http://archive.org/download/LiveAtEspacoMundoFIC2013/LiveAtEspacoMundoFIC2013_vbr_mp3.zip"><img src="images/capa_live_espaco.jpg"></a>
+            </td>
+            <td>
+              <h2>↓ Hazamat - Live at Taperoá-PB ↓</h2>
+              <a href="http://archive.org/download/Hazamat-LiveAtTapero-pb/Hazamat-LiveAtTapero-pb_vbr_mp3.zip"><img src="images/capa_live_taperoa.jpg"></a>
+            </td>
+          </tr>  
+          <tr>
+            <td>
+              <h2>↓ Hazamat - Hazamat[2011] ↓</h2>
+              <a href="http://archive.org/download/Hazamat-Hazamat/Hazamat-Hazamat2011.zip"><img src="images/capa_hazamat.jpg"></a>
+            </td>  
+            <td>
+              <h2>↓ Novo single: "Nossa voz" ↓</h2>
+              <a href="http://archive.org/download/HazamatNossaVoz/Hazamat%20-%20Nossa%20Voz.mp3"><img src="images/brasao.png"></a>
+            </td>  
+          </tr>
+        </table>
       </div>
+      <br />
       <br />    <br />
       <!-- ####################################################################################################### -->
       <div id="homepage" class="clear">
@@ -182,9 +191,8 @@ swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '43
       <!-- ####################################################################################################### -->
       <div class="fl_right">
         <div id="tabcontainer" class="border">
-          <h2>Player</h2>
-          <br/>
-          <br/>
+          <h2>Notícias</h2>
+          <script type="text/javascript" src="http://output10.rssinclude.com/output?type=js&amp;id=515329&amp;hash=84e226604139efa9fbff85e6da366e26"></script>
           <!-- Links para as redes sociais -->
         </div>
         <div id="tabcontainer" class="border">
