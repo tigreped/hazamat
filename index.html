@@ -107,13 +107,53 @@ swfobject.embedSWF('scripts/piecemaker/piecemaker.swf', 'piecemaker', '960', '43
   </div>
   <!-- ####################################################################################################### -->
   <div class="wrapper col4">
-    </br></br></br></br>
+    <!--Music player-->
+    <div class="ttw-music-player">
+      <h1 style="text-align:center;">Player</h1>
+      <div class="player jp-interface">
+        <div class="track-info">
+          <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <div class="player-controls">
+          <div class="main">
+            <div class="previous jp-previous"></div>
+            <div class="play jp-play"></div>
+            <div class="pause jp-pause"></div>
+            <div class="next jp-next"></div>
+            <!-- These controls aren\'t used by this plugin, but jPlayer seems to require that they exist -->
+            <span class="unused-controls">
+              <span class="jp-video-play"></span>
+              <span class="jp-stop"></span>
+              <span class="jp-mute"></span>
+              <span class="jp-unmute"></span>
+              <span class="jp-volume-bar"></span>
+              <span class="jp-volume-bar-value"></span>
+              <span class="jp-volume-max"></span>
+              <span class="jp-current-time"></span>
+              <span class="jp-duration"></span>
+              <span class="jp-full-screen"></span>
+              <span class="jp-restore-screen"></span>
+              <span class="jp-repeat"></span>
+              <span class="jp-repeat-off"></span>
+              <span class="jp-gui"></span>
+            </span>            
+          </div>
+          <div class="progress-wrapper">
+            <div class="progress jp-seek-bar">
+              <div class="elapsed jp-play-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="jPlayer-container"></div>
+    </div>
+    <!----------------->
     <div id="container" class="clear">
       <!-- ####################################################################################################### -->
       <div class="clear">
         <table style="text-align:center;border:none;">
           <tr>
-            <td>
+            <td style="width:50%;">
               <h2>↓ Hazamat - Live at Espaço Mundo-PB ↓</h2>
               <a href="http://archive.org/download/LiveAtEspacoMundoFIC2013/LiveAtEspacoMundoFIC2013_vbr_mp3.zip"><img src="images/capa_live_espaco.jpg"></a>
             </td>
