@@ -28,8 +28,8 @@ table thead th{
 table tbody td{
 	vertical-align:top;
 	border-collapse:collapse;
-	--border-left:1px solid #CCCCCC;
-	--border-right:1px solid #CCCCCC;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
 	}
 	
 table thead th, table tbody td{

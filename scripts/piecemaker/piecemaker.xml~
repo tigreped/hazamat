@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Piecemaker>
   <Contents>
-    <Image Source="images/photos/022.jpg" Title="Slide 1"></Image>
+    <Image Source="images/photos/001.jpg" Title="Slide 1"></Image>
     <Image Source="images/photos/002.jpg" Title="Slide 2"></Image>
     <Image Source="images/photos/003.jpg" Title="Slide 3"></Image>
     <Image Source="images/photos/004.jpg" Title="Slide 4"></Image>
@@ -26,7 +26,7 @@
       <Hyperlink URL="#" />
     </Image>
   </Contents>
-  <Settings ImageWidth="960" ImageHeight="640" LoaderColor="0x333333" InnerSideColor="0x222222" SideShadowAlpha="0.8" DropShadowAlpha="0.7" DropShadowDistance="50" DropShadowScale="0.90" DropShadowBlurX="40" DropShadowBlurY="10" MenuDistanceX="25" MenuDistanceY="100" MenuColor1="0x999999" MenuColor2="0x333333" MenuColor3="0xFFFFFF" ControlSize="70" ControlDistance="20" ControlColor1="0x222222" ControlColor2="0xFFFFFF" ControlAlpha="0.8" ControlAlphaOver="0.95" ControlsX="480" ControlsY="450" ControlsAlign="center" TooltipHeight="30" TooltipColor="0x222222" TooltipTextY="5" TooltipTextStyle="P-Italic" TooltipTextColor="0xFFFFFF" TooltipMarginLeft="5" TooltipMarginRight="5" TooltipTextSharpness="50" TooltipTextThickness="-100" InfoWidth="400" InfoBackground="0xFFFFFF" InfoBackgroundAlpha="0.95" InfoMargin="50" InfoSharpness="0" InfoThickness="0" Autoplay="3" FieldOfView="100"></Settings>
+  <Settings ImageWidth="960" ImageHeight="640" LoaderColor="0x333333" InnerSideColor="0x222222" SideShadowAlpha="0.8" DropShadowAlpha="0.7" DropShadowDistance="10" DropShadowScale="0.90" DropShadowBlurX="40" DropShadowBlurY="10" MenuDistanceX="25" MenuDistanceY="100" MenuColor1="0x999999" MenuColor2="0x333333" MenuColor3="0xFFFFFF" ControlSize="70" ControlDistance="20" ControlColor1="0x222222" ControlColor2="0xFFFFFF" ControlAlpha="0.8" ControlAlphaOver="0.95" ControlsX="480" ControlsY="450" ControlsAlign="center" TooltipHeight="30" TooltipColor="0x222222" TooltipTextY="5" TooltipTextStyle="P-Italic" TooltipTextColor="0xFFFFFF" TooltipMarginLeft="5" TooltipMarginRight="5" TooltipTextSharpness="50" TooltipTextThickness="-100" InfoWidth="400" InfoBackground="0xFFFFFF" InfoBackgroundAlpha="0.95" InfoMargin="50" InfoSharpness="0" InfoThickness="0" Autoplay="3" FieldOfView="100"></Settings>
   <Transitions>
     <Transition Pieces="9" Time="1.2" Transition="easeInOutBack" Delay="0.1" DepthOffset="300" CubeDistance="30"></Transition>
     <Transition Pieces="15" Time="3" Transition="easeInOutElastic" Delay="0.03" DepthOffset="200" CubeDistance="10"></Transition>
